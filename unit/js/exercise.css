@@ -13,16 +13,26 @@ body {
 }
 
 .card {
-  transition: all .2s;
+  transition: all .1s;
 
   /* Step 0:
    * vendor-prefix like `-webkit-transform` is for compatibility, it is less important as browsers improves
    */
-  -webkit-transform: all .2s;
+  -webkit-transform: all .1s;
 }
 
 .card.hidden {
-  opacity: 0.1;
+  color: red !important;
+  background-color: blueviolet !important;
+  /*opacity: 0.1;*/
 }
 
+.header {
+  color: black;
+}
+.header.hidden {
+  color: red !important;
+}
 /* Step 6 code goest here */
+
+/*千萬不要用hover ，手機平板都沒有hover*/

@@ -6,7 +6,11 @@
     <title>js exercise</title>
 
     <!-- Step 0 code goes here -->
-
+    <!-- Step 0: replace [cdn address of semantic-ui] with the correct address -->
+    <link href="exercise.css" rel="stylesheet" type="text/css">
+    <script src="jq/jquery-3.6.0.slim.min.js"></script> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css">
+    
   </head>
   <body>
     <div class="ui cards">
@@ -43,16 +47,43 @@
 
     <!-- Step 1 code goes here -->
 
-    <script>
-      // Step 2 code goes here
-
-
-    </script>
-
     <!-- Step 3 code goes here -->
 
 
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+  <script>
+    $(document).click(() => { // Step 2: replace [event] with an appropriate value
+      console.log("Event triggered!")
+    })
+  </script>
+  <script>
+    let display = true
+      $('.card:nth-child(1)').click(function () {
+        // Step 3: replace [alternative style] to an appropriate value
+        const style = display
+          ? { opacity: 0.1 }
+          : { opacity:  1}
+        $(this).animate(style, 400)
+        display = !display
+      })
+  </script>
+  <script>
+    /*用click 去切換class*/
+    /*在class name後面加hidden 或不加*/
+    $('.card:nth-child(2)').click(function () {
+        $(this).toggleClass( "hidden" , 400) // Step 4: replace [css class] with an appropriate value
+      })
+  </script>
+  <script>
+    $('.card:nth-child(3)').click(function () {
+        $(this).transition('fade') // Step 5: replace [effect] with an appropriate value
+  
+      })
+
+  </script>
 </html>
 <!--
   vi:et:sw=2:ts=2

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>http & ajax exercise</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Step 6 code goes here -->
+    <!--action 是去動到./step5 的網頁-->
+    <form id="ajax-form">
+        <button type="submit" id = "list_button">list all</button>
+    </form>
+    <div id="list_print">
+    </div>
+    
+    <form id="search">
+        student ID:<input type="text" name="searchID" placeholder="id"><br>
+        <button type="submit" name="search_id_b">search specific student</button>
+    </form>
+    <br>
+    <div id="searchID-output" style="font-weight: bold; font-size: 30px;"></div>
+
+    <form id="add_name">
+        add ID:<input type="text" name="addID" placeholder="id"><br>
+        add Name:<input type="text" name="addName" placeholder="name"><br>
+        <button type="submit" id="add_name_b">Add new student</button>
+    </form>
+    <br>
+    <div id="add-output" style="font-weight: bold; font-size: 30px;"></div>
+
+    <form id="delete">
+        student ID:<input type="text" name="id_to_delete" placeholder="id"><br>
+        <button type="submit" id="delete_name_b">Delete Specific student</button>
+    </form>
+    <br>
+    <div id="delete-output" style="font-weight: bold; font-size: 30px;"></div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

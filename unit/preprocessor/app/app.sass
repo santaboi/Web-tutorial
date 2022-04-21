@@ -6,6 +6,12 @@
   display: flex
   justify-content: space-around
   button
-    color: white
+    //color: white
     padding: 15px
     // Step 2 code goes here
+  &:nth-child(1)
+    +buttonStyle(pink, 2px)
+  &:nth-child(2)
+    +buttonStyle(red, 2px)
+  &:nth-child(3)
+    +buttonStyle(blue, 2px)

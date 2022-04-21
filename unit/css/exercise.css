@@ -8,23 +8,29 @@ body {
   background-color: white;
 
   /* Step 2 code goes here */
-
+  max-width: 50em;
+  /*螢幕較窄的時候占用80趴 ，螢幕很寬的時候最多40英文字*/
+  /*100%(佔父親的趴數) 100px 100em 100vw(螢幕寬度)*/
+  width: 80%;
 }
 
 #navbar {
   line-height: 0;
   padding: 5px 0;
   top: 0;
-
+  /*position: relative ;*/
   /* Step 6 code goes here */
-
+  position: fixed; /*fixed 包含relative 特性???*/
 }
 
 i.avatar, i.icon {
   background-position: center;
 
   /* Step 3 code goes here */
-
+  display: inline-block;
+  height: 30px;
+  /*前景圖片<->背景圖片*/
+  
 }
 
 i.avatar {
@@ -42,6 +48,10 @@ i.icon {
 .right {
 
   /* Step 4 code goes here */
+  /*爸爸要設成position : relative 小孩子設absolute 才可以被爸爸操控*/
+  position: absolute;
+  right: 0.5em;
+  
 
 }
 
@@ -53,11 +63,14 @@ i.icon {
 #banner {
 
   /* Step 5 code goes here */
-
+  /*try not to use image tag?? , use background instead*/
+  background: url(./res/main.jpg) center bottom / cover;
+  /*background: url(./res/main.jpg) center top / cover;*/
+  /*background: url(./res/main.jpg) [position] / [size];*/
   top: 40px;
-  height: 250px;
-
+  height: 500px;
   /* Step 6 code goes here */
+  position: fixed;
 
 }
 
@@ -68,13 +81,13 @@ i.icon {
   top: 290px;
 
   /* Step 8 code goes here */
-
+  /*z-index 設定顯示層*/
 }
 
 .info {
 
   /* Step 7 code goes here */
-
+  /*google css tricks (flex box)*/
   margin: 0 0 5% 0;
 }
 
